@@ -1,0 +1,47 @@
+1. Trinte global installieren
+	$ npm install trinte -g
+
+2. App erzeugen
+	$ trinte -i litrev  --db sqlite3:./db/main.sqlite --theme cyborg --sess --auth --uploader --recaptcha --mailer
+
+3. CRUD-Geruest erstellen fuer User
+	$ trinte -g crud User id:int username password salt email createdat updatedat
+
+	Start generate crud
+
+	Creating model using singular not plural: User
+
+	#   create ./app/models/User.js
+Model created!
+
+	Controller for model User created in app/UsersController.js
+
+	Using model name as singular not plural: User
+
+	Views User created in app/views/user
+Using model name as singular not plural: User
+
+	Tests for User created in tests.
+
+4. CRUD-Geruest erstellen fuer Projects
+	$ trinte -g crud Project id:int projectname description uid:int createdat updatedat
+
+	Start generate crud
+
+	Creating model using singular not plural: Project
+	
+#   	create ./app/models/Project.js
+Model created!
+
+	Using Controller name as plural not singular: Projects
+Controller for model Project created in app/ProjectsController.js
+
+	Using model name as singular not plural: Project
+
+	Views Project created in app/views/project
+
+	Using model name as singular not plural: Project
+
+	Tests for Project created in tests.
+
+5. Controller erstellen fuer Publications

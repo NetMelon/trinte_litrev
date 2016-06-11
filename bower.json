@@ -1,0 +1,12 @@
+{
+    "name": "litrev",
+    "description": "litrev",
+    "author": "netmellon",
+    "version": "0.0.1",
+    "license": "MIT",
+    "dependencies": {
+        "jquery": "^2.2.1",
+        "html5shiv": "^3.7.3",
+        "respond": "^1.4.2"
+    }
+}

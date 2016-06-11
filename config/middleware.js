@@ -1,0 +1,28 @@
+/**
+ *  Default middleware manager
+ *  Inject app and express reference
+ *
+ *  Created by trinte-creator script
+ *  App based on TrinteJS MVC framework
+ *  TrinteJS homepage http://www.trintejs.com
+ **/
+var useragent = require('express-useragent');
+var csrf = require('csurf');
+var auth = require('./authorization/local');
+
+/**
+ * Define middleware
+ * @param {Object} app
+ * @param {Object} express
+ **/
+module.exports = function middleware(app) {
+    app.use(auth.initialize());
+    app.use(csrf());
+    app.use(useragent.express());
+    if (/^dev/i.test(process.env.NODE_ENV)) {
+        var liveroad = require('connect-livereload');
+        app.use(liveroad({
+            port: 35729
+        }));
+    }
+};

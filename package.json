@@ -1,0 +1,70 @@
+{
+    "name": "litrev",
+    "description": "litrev",
+    "version": "0.0.1",
+    "author": "netmellon",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/biggora/trinte.git"
+    },
+    "main": "./app.js",
+    "scripts": {
+        "start": "trinte -s",
+        "test": "mocha test"
+    },
+    "engines": {
+        "node": ">=0.10",
+        "npm": ">=1.5"
+    },
+    "dependencies": {
+        "trinte": "latest",
+        "caminte": "latest",
+        "express-useragent": "latest",
+        "connect": ">=3.0.0",
+        "express": ">=4.0.0",
+        "connect-multiparty": ">=1.0.3",
+        "morgan": ">=1.2.0",
+        "errorhandler": ">=1.1.0",
+        "compression": ">=1.0.9",
+        "express-session": ">=1.7.2",
+        "body-parser": ">=1.5.0",
+        "method-override": ">=2.1.0",
+        "cookie-parser": ">=1.3.0",
+        "csurf": ">=1.4.0",
+        "js-yaml": ">=3.1.0",
+        "connect-livereload": "*",
+        "ejs": ">=2.0.0",
+        "ejs-locals": ">=1.0.2",
+        "passport": ">=0.2.0",
+        "passport-local": ">=1.0.0",
+        "trinte-auth": "latest",
+        "express-uploader": "latest",
+        "gm": ">=1.16.0",
+        "node-uuid": ">=1.4.1",
+        "nodemailer": ">=0.6.5",
+        "recaptcha": ">=1.2.0",
+        "connect-caminte": "*",
+        "sqlite3": "*"
+    },
+    "devDependencies": {
+        "mocha": "latest",
+        "should": "latest",
+        "assert": "latest",
+        "supertest": "latest",
+        "istanbul": "latest",
+        "jshint": "^2.8.0",
+        "gulp": "latest",
+        "require-dir": "latest",
+        "gulp-filter": "latest",
+        "gulp-rimraf": "latest",
+        "gulp-jshint": "latest",
+        "gulp-filesize": "latest",
+        "gulp-cssnano": "latest",
+        "gulp-sourcemaps": "latest",
+        "gulp-rename": "latest",
+        "gulp-uglify": "latest",
+        "gulp-live-server": "latest"
+    },
+    "license": "MIT"
+}
