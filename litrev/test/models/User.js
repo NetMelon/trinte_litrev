@@ -1,6 +1,6 @@
 /**
 *  User Model Test
-*  Created by create-test script @2016-06-11T12:23:27.077Z
+*  Created by create-test script @2016-06-11T16:20:58.356Z
 **/
 
 

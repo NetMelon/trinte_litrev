@@ -1,6 +1,6 @@
 /**
  *  Users Controller Test
- *  Created by create-test script @2016-06-11T12:23:27.075Z
+ *  Created by create-test script @2016-06-11T16:20:58.353Z
  **/
 
 

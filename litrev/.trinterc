@@ -1,0 +1,15 @@
+{
+    "name": "litrev",
+    "description": "litrev",
+    "author": "netmelon",
+    "version": "0.0.1",
+    "engine": "ejs",
+    "theme": "cyborg",
+    "css": "css",
+    "js": "js",
+    "session": true,
+    "auth": true,
+    "socket": false,
+    "uploader": true,
+    "mailer": true
+}

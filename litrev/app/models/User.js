@@ -4,8 +4,8 @@
  *  @package     litrev
  *  @version     0.0.1
  *  @desc        litrev
- *  @author      netmellon
- *  @created     2016-06-11T12:23:27.027Z
+ *  @author      netmelon
+ *  @created     2016-06-11T16:20:58.303Z
  *  @link        https://github.com/biggora/caminte/wiki
  *
  *  Created by create-model script

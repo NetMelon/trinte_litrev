@@ -4,8 +4,8 @@
  *  @package     litrev
  *  @version     
  *  @desc        litrev
- *  @author      netmellon
- *  @created     2016-06-11T12:10:38.887Z
+ *  @author      netmelon
+ *  @created     2016-06-11T16:16:48.674Z
  *  @link        https://github.com/biggora/trinte/wiki
  *
  *  Created by create-controller script

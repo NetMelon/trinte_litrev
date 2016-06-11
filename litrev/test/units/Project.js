@@ -1,6 +1,6 @@
 /**
- *  Users Unit Test
- *  Created by create-test script @2016-06-11T12:23:27.074Z
+ *  Projects Unit Test
+ *  Created by create-test script @2016-06-11T16:21:19.571Z
  **/
 
 
@@ -8,18 +8,18 @@ var should = require('should');
 var caminte = require('caminte');
 var config = require('../../config/database');
 var dbConf = config[process.env.NODE_ENV];
-var UserModel = require('../../app/models/User');
+var ProjectModel = require('../../app/models/Project');
 var Schema = caminte.Schema;
 dbConf.host = process.env.DB_HOST || dbConf.host;
 var schema = new Schema(dbConf.driver, dbConf);
-var User = UserModel(schema);
+var Project = ProjectModel(schema);
 
 /**
  * Simple tests for the Banner model
  */
-describe('Unit User:', function () {
+describe('Unit Project:', function () {
 	'use strict';
-	var user, id;
+	var project, id;
 
 	before(function (done) {
 		schema.autoupdate(function () {
@@ -34,15 +34,15 @@ describe('Unit User:', function () {
 
 	describe('create unit', function () {
 
-		user = new User();
-		it('user should be object', function () {
-			user.should.be.type('object');
+		project = new Project();
+		it('project should be object', function () {
+			project.should.be.type('object');
 		});
 
-		it('validate user', function (done) {
-			user.isValid(function (valid) {
+		it('validate project', function (done) {
+			project.isValid(function (valid) {
 				valid.should.be.true;
-				if (!valid) console.log(user.errors);
+				if (!valid) console.log(project.errors);
 				done();
 			});
 		});
@@ -52,16 +52,16 @@ describe('Unit User:', function () {
 	describe('#save()', function () {
 
 		it('should be have #save', function () {
-			user.should.be.have.property('save');
-			user.save.should.be.type('function');
+			project.should.be.have.property('save');
+			project.save.should.be.type('function');
 		});
 
 		it('call save()', function (done) {
-			user.save(function (err) {
+			project.save(function (err) {
 				should.not.exist(err);
-				user.should.be.have.property('id');
-				user.id.should.not.eql(null);
-				id = user.id;
+				project.should.be.have.property('id');
+				project.id.should.not.eql(null);
+				id = project.id;
 				done();
 			});
 		});
@@ -71,12 +71,12 @@ describe('Unit User:', function () {
 	describe('#destroy()', function () {
 
 		it('should be have #destroy', function () {
-			user.should.be.have.property('destroy');
-			user.destroy.should.be.type('function');
+			project.should.be.have.property('destroy');
+			project.destroy.should.be.type('function');
 		});
 
 		it('call destroy()', function (done) {
-			user.destroy(function (err) {
+			project.destroy(function (err) {
 				should.not.exist(err);
 				done();
 			});
